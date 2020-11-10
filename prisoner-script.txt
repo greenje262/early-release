@@ -1,0 +1,42 @@
+On game start:
+    "Hey you, you're finally awake. Can you stand? Can you walk?"
+
+On walk:
+    "Great, great, great. Okay, listen to me - we need to get out of here, and we don't have much time. Your cell door is open. All you need to do is walk through the next room and grab the ring of keys on the table. I'll guide you over there."
+
+In the room:
+    "Okay, you're in the room. The keys are on a table in the far corner."
+
+Near the keys:
+    "That's it, the keys are right there on the table! Grab them and let's get out of here."
+
+Picked up keys:
+    "Yes, finally, FINALLY, we'll get out of here. Hurry on back - oh, I'll help you out if you need it."
+
+Unlocked door:
+    "Thank you friend, thank you, thank you. I'll take those keys and unlock the door ahead. Come with me!"
+
+End:
+    "Well done, friend. Now let's get out of here."
+
+Directional instructions:
+    Left:
+        "It's to your left."
+        "Turn to the left a little bit."
+        "To the left, slightly."
+        "Yep, now a little to the left."
+    Right:
+        "It's on your right."
+        "It's just to the right."
+        "See, it's to the right a bit."
+        "Turn right, that's it."
+
+Idle barks:
+    "Trust me, it's better you can't see this."
+    "Don't think they'll be back soon, but I'd rather not take the risk."
+    "I'm sure it's a mess outside, but...one step at a time."
+    "Pretty...quiet up there."
+    "You doing alright?"
+    "Can't believe we're getting out of here."
+
+"Welcome to Early Release. You can use WASD to move, the mouse to look, press J to interact with keys and doors, and press Escape to quit. You can begin the game by pressing the space bar."

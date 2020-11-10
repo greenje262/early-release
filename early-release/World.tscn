@@ -1,0 +1,168 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Prisoner.tscn" type="PackedScene" id=2]
+[ext_resource path="res://World.gd" type="Script" id=3]
+
+[sub_resource type="CubeMesh" id=1]
+
+[sub_resource type="ConcavePolygonShape" id=2]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[node name="World" type="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 0 )
+script = ExtResource( 3 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 7 )
+
+[node name="Prisoner" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -3 )
+
+[node name="Walls" type="Spatial" parent="."]
+
+[node name="MeshInstance" type="MeshInstance" parent="Walls"]
+transform = Transform( 6, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Walls/MeshInstance"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Walls/MeshInstance/StaticBody"]
+shape = SubResource( 2 )
+
+[node name="MeshInstance2" type="MeshInstance" parent="Walls"]
+transform = Transform( 6, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Walls/MeshInstance2"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Walls/MeshInstance2/StaticBody"]
+shape = SubResource( 2 )
+
+[node name="MeshInstance3" type="MeshInstance" parent="Walls"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 3, 7, 0, -2 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Walls/MeshInstance3"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Walls/MeshInstance3/StaticBody"]
+shape = SubResource( 2 )
+
+[node name="MeshInstance4" type="MeshInstance" parent="Walls"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 3, 7, 0, 6 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Walls/MeshInstance4"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Walls/MeshInstance4/StaticBody"]
+shape = SubResource( 2 )
+
+[node name="MeshInstance5" type="MeshInstance" parent="Walls"]
+transform = Transform( 16, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, -6 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Walls/MeshInstance5"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Walls/MeshInstance5/StaticBody"]
+shape = SubResource( 2 )
+
+[node name="MeshInstance6" type="MeshInstance" parent="Walls"]
+transform = Transform( 16, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 10 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Walls/MeshInstance6"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Walls/MeshInstance6/StaticBody"]
+shape = SubResource( 2 )
+
+[node name="MeshInstance7" type="MeshInstance" parent="Walls"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 3, 19, 0, -2 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Walls/MeshInstance7"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Walls/MeshInstance7/StaticBody"]
+shape = SubResource( 2 )
+
+[node name="MeshInstance8" type="MeshInstance" parent="Walls"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 3, 19, 0, 6 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Walls/MeshInstance8"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Walls/MeshInstance8/StaticBody"]
+shape = SubResource( 2 )
+
+[node name="MeshInstance9" type="MeshInstance" parent="Walls"]
+transform = Transform( 4, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 4 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Walls/MeshInstance9"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Walls/MeshInstance9/StaticBody"]
+shape = SubResource( 2 )
+
+[node name="MeshInstance10" type="MeshInstance" parent="Walls"]
+transform = Transform( 4, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 0 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Walls/MeshInstance10"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Walls/MeshInstance10/StaticBody"]
+shape = SubResource( 2 )
+
+[node name="MeshInstance11" type="MeshInstance" parent="Walls"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 9, 39, 0, 2 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Walls/MeshInstance11"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Walls/MeshInstance11/StaticBody"]
+shape = SubResource( 2 )
+
+[node name="Key" type="MeshInstance" parent="Walls"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 37, 0, 8 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Walls/Key"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Walls/Key/StaticBody"]
+shape = SubResource( 2 )
+
+[node name="Doors" type="Spatial" parent="."]
+
+[node name="JailDoor" type="MeshInstance" parent="Doors"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 0 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Doors/JailDoor"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Doors/JailDoor/StaticBody"]
+shape = SubResource( 2 )
+
+[node name="PrisonDoor" type="MeshInstance" parent="Doors"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 2 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Doors/PrisonDoor"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Doors/PrisonDoor/StaticBody"]
+shape = SubResource( 2 )
+
+[node name="HelpTimer" type="Timer" parent="."]
+wait_time = 5.0
+[connection signal="timeout" from="HelpTimer" to="." method="_on_HelpTimer_timeout"]

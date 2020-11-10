@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/idle4.ogg-4f5c720c8c8fd87fc72e971f760a8de6.oggstr"
+
+[deps]
+
+source_file="res://audio/idle4.ogg"
+dest_files=[ "res://.import/idle4.ogg-4f5c720c8c8fd87fc72e971f760a8de6.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

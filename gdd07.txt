@@ -1,0 +1,39 @@
+[EARLY RELEASE]
+
+Core mechanic
+    walking around a room, interacting with objects
+
+Core gameplay loop
+    receive verbal instructions, fumble around in the dark to complete tasks
+
+Intended player experience
+    short, audio-based game in complete darkness
+
+Theme
+    A little light-hearted spookiness
+
+Primary features
+    Room with furniture, cell, exit
+    Audio to guide the player
+    Interactable object
+
+Secondary features
+    Subtitles
+    Ambient noise
+    Bright light upon exiting
+    Title & game over screens
+
+Polish
+    Longer quest?
+
+What do I need to learn?
+    Set up the podcasting mic (need USB to USB-C adapter)
+    Navigation in 3D (miziziziz 3D platformer video)
+    Building a map in 3D
+    Setting an audio source, and playing audio programmatically
+
+Workflow
+    Build player scene, prisoner scene, world scene
+    Write script, including barks and hints
+    Program questline (interaction, etc.)
+    Hook up voice audio to play on quest progression and every once in a while
